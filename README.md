@@ -19,10 +19,10 @@ brightness.sh is a shell script base on dialog to change
     "DIALOG --clear --title "Brightness"	\
 	--menu "Hello $USER choose Brightness" 20 51 $(number of row) \
 	"$(desire brightness)" "$(comment)" \
-valret=$?
+valret=$? \
 
-case $valret in
-	0) clear && sudo cat $fichtmp > /sys/class/backlight/$(name of graphic interface)/brightness ;;
+case $valret in \
+	0) clear && sudo cat $fichtmp > /sys/class/backlight/$(name of graphic interface)/brightness ;; \
 	1|255) clear && echo "Aborted";;"
   
  $ chmod +x ./brightness.sh
