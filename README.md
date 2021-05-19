@@ -10,10 +10,10 @@ to changes buttons change var = interface name
 ```bash
 	--menu "Hello $USER which boot manager do you want?" 20 51 $(number of rows) \
 	"$(interface name)" "$(comment)" \
-
+```
 	$ chmod +x ./my_boot.sh
 	$ ./my_boot.sh
-```
+
 brightness.sh is a shell script base on dialog to change
     machine brightness
 
