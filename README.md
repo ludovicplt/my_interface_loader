@@ -1,6 +1,6 @@
 # my_interface_loader
 
-Fedora:   dnf install dialog
+	Fedora:   $ dnf install dialog
 
 my_boot.sh is a shell script base on dialog to choose
 
@@ -11,6 +11,8 @@ to changes buttons change var = interface name
 	--menu "Hello $USER which boot manager do you want?" 20 51 $(number of rows) \
 	"$(interface name)" "$(comment)" \
 ```
+
+### execute
 	$ chmod +x ./my_boot.sh
 	$ ./my_boot.sh
 
@@ -27,7 +29,7 @@ brightness.sh is a shell script base on dialog to change
 	0) clear && sudo cat $fichtmp > /sys/class/backlight/$(name of graphic interface)/brightness ;; \
 	1|255) clear && echo "Aborted";;"
 ```
-execute:
+### execute
 
  	$ chmod +x ./brightness.sh
 	$ sudo brightness
