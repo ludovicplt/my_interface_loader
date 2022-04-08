@@ -19,7 +19,7 @@ to changes buttons change var = interface name
 brightness.sh is a shell script base on dialog to change
     machine brightness
 
-### attention
+### warning
 be aware of your max brightness:
 
 	$ cat /sys/class/backlight/$(name component)/max_brightness
